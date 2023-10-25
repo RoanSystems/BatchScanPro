@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BatchScan Pro</string>
+    <string name="bm_logo">Bidvest Mobility Logo</string>
+    <string name="username_input_hint">Username</string>
+    <string name="button_text_next">Next</string>
+    <string name="version_number">V2.0.23102023</string>
+    <string name="lbqty">Quantity</string>
+    <string name="user">User:</string>
+    <string name="bintitle">Enter Location or Bin:</string>
+    <string name="binhint">Scan Bin Location</string>
+    <string name="assettitle">Item ID</string>
+    <string name="productidhint">Scan Item Barcode</string>
+    <string name="qtyEnter">#</string>
+    <string name="clearbtn">CLEAR</string>
+    <string name="enterbtn">ENTER</string>
+    <string name="defaultqty">1</string>
+
+</resources>

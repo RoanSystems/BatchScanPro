@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Date Label -->
+    <TextView
+        android:id="@+id/lblDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="DATE"
+        android:textAlignment="center"
+        android:textColor="@color/bidvestmustard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- User Label -->
+    <TextView
+        android:id="@+id/UserLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/user"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- User Value Label -->
+    <TextView
+        android:id="@+id/lbUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="60dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/UserLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Checkbox for Bin Location -->
+    <CheckBox
+        android:id="@+id/cbBin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="40dp"
+        android:scaleX="1.6"
+        android:scaleY="1.6"
+        app:layout_constraintTop_toBottomOf="@id/lbUser"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <!-- Enter Location or Bin Label -->
+    <CheckBox
+        android:id="@+id/cbQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.6"
+        android:scaleY="1.6"
+        app:layout_constraintEnd_toStartOf="@+id/tbQty"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbQty" />
+
+    <TextView
+        android:id="@+id/lblbinlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/bintitle"
+        android:textAlignment="center"
+        android:textColor="#004A99"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/cbBin"
+        app:layout_constraintTop_toBottomOf="@id/lbUser" />
+
+    <!-- Input for Bin Location -->
+    <EditText
+        android:id="@+id/tbBin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/binhint"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblbinlocation" />
+
+    <!-- Asset Number Label -->
+    <TextView
+        android:id="@+id/lblserial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/assettitle"
+        android:textAlignment="center"
+        android:textColor="#004A99"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbBin" />
+
+    <!-- Input for Serial Number -->
+    <EditText
+        android:id="@+id/tbSN"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Scan Serial Number"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintTop_toBottomOf="@id/lblserial"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <!-- Quantity Label -->
+    <TextView
+        android:id="@+id/lbQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/lbqty"
+        android:textAlignment="center"
+        android:textColor="#004A99"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbSN" />
+
+    <!-- Input for Quantity -->
+    <EditText
+        android:id="@+id/tbQty"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:hint="@string/qtyEnter"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:background="@drawable/edittext_border"
+        android:text="@string/defaultqty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbQty" />
+
+    <!-- Clear Button -->
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="140dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="@color/bidvestmustard"
+        android:text="@string/clearbtn"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintRight_toLeftOf="@id/btnSubmit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbQty" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="140dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/enterbtn"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbQty" />
+
+    <!-- Note: I saw the XML was cut off, so I've just added the widgets you provided. -->
+    <!-- Additional widgets would need to be manually added based on your application's needs. -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

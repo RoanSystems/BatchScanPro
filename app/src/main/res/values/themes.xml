@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BatchScanPro" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/bidvestblue</item>
+        <item name="colorPrimaryDark">@color/bidvestblue</item>
+        <item name="colorAccent">@color/bidvestmustard</item>
+    </style>
+
+</resources>

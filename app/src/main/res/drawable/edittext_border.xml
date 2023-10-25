@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Define the border properties -->
+            <solid android:color="@android:color/white" /> <!-- Background color -->
+            <stroke
+                android:width="2dp"
+                android:color="@color/bidvestgrey"/> <!-- Border width -->
+                        <!-- Border color (you can change this) -->
+            <corners android:radius="4dp" />               <!-- Rounded corners -->
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp" />
+        </shape>
+    </item>
+</selector>
